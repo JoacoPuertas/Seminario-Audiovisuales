@@ -1,0 +1,29 @@
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+.img {
+    width: 60vw;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.img:hover {
+    transform: scale(1.1); /* Zoom al pasar el mouse */
+    filter: brightness(0.5) contrast(1.1);
+}
+
+.redes {
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+    .img {
+        width: 25vw;
+    }
+
+    .redes {
+        width: 25%;
+    }
+}
